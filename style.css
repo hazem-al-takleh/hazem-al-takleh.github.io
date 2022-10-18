@@ -111,3 +111,9 @@
 .portfolioContent {
     height: 100%;
 }
+
+.social-link {
+    color: aliceblue;
+    margin-left: 4px;
+    margin-right: 4px;
+}

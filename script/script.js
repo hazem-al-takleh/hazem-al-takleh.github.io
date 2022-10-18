@@ -18,25 +18,3 @@ const menuToggle = document.getElementById('navbarSupportedContent')
 navLinks.forEach((l) => {
     l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
 })
-
-function sendEmail() {
-    var name = document.getElementById('name').value
-    var email = document.getElementById('email').value
-    var subject = document.getElementById('subject').value
-    var emailBody = document.getElementById('body').value
-    var myEmail = 'hazem.thecla.ht@gmail.com'
-    var smtpEmail = 'hamzeh.tamzeeh@gmail.com'
-    var smtpPass = '123456789aaaa@@@@'
-    Email.send({
-            Host: "smtp.gmail.com",
-            Username: smtpEmail,
-            Password: smtpPass,
-            To: myEmail,
-            From: email,
-            Subject: subject,
-            Body: emailBody,
-        })
-        .then(function(message) {
-            alert("Mail has been sent successfully")
-        });
-}
